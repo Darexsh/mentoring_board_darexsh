@@ -1,0 +1,140 @@
+(footprint "ECS-.327-9-34B-T"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -0.18 -3.52 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a345e8fd-7e14-4704-8272-8040107ddb3e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ECS-.327-9-34B-T"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "93b0ac60-7df0-41cf-8061-0185be56f24c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a262772a-bc57-41a9-8e05-69fdcd3e357f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c09d68ac-ed74-4808-8013-0664fa1c8161")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2652dc62-ed16-4278-9e7d-c7e2f180fd99")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0.6 0.77)
+		(end 1.89 0.77)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "63616372-4c1f-4e82-ad11-4e05c79c5953")
+	)
+	(fp_line
+		(start 0.61 -0.73)
+		(end 1.89 -0.73)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "175085f1-d6e2-434c-ab2a-2a1436611f8c")
+	)
+	(fp_rect
+		(start -1.05 -1.45)
+		(end 3.55 1.45)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "e3f31f13-fd08-4003-85e1-51041753924c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4942b0f1-aece-443b-916a-89dbc73ce8b9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 1.1 1.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "9140b53c-c45f-4e21-be60-cdccf851c8ef")
+	)
+	(pad "2" smd roundrect
+		(at 2.5 0)
+		(size 1.1 1.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "80123850-7974-47d9-8e7b-aa08c72b5442")
+	)
+	(model "${KIPRJMOD}/Lib-3D-Files/ECS-.327-9-34B-T.stp"
+		(offset
+			(xyz 1.2 0 0)
+		)
+		(scale
+			(xyz 1.7 1.1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
