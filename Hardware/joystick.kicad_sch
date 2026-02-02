@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "12d30f64-4bd5-42f8-a31a-48a242e82b83")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -126,6 +130,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "ProjectSymbols:COM-09032"
 			(pin_names
@@ -312,8 +317,45 @@
 			)
 			(symbol "COM-09032_1_0"
 				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 5.08)
+					(name "Y_DATA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "V2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -10.16 0)
+					(length 5.08)
+					(name "X_DATA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "H2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at -12.7 -15.24 0)
-					(length 5.08) hide
+					(length 5.08)
+					(hide yes)
 					(name "SEL+"
 						(effects
 							(font
@@ -331,7 +373,8 @@
 				)
 				(pin passive line
 					(at -12.7 -17.78 0)
-					(length 5.08) hide
+					(length 5.08)
+					(hide yes)
 					(name "SEL-"
 						(effects
 							(font
@@ -366,34 +409,16 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -10.16 0)
+					(at -1.27 -34.29 90)
 					(length 5.08)
-					(name "X_DATA"
+					(name "Y_GND"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "H2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 1.27 -34.29 90)
-					(length 5.08)
-					(name "X_GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "H3"
+					(number "V3"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -420,34 +445,16 @@
 					)
 				)
 				(pin passive line
-					(at -12.7 -7.62 0)
+					(at 1.27 -34.29 90)
 					(length 5.08)
-					(name "Y_DATA"
+					(name "X_GND"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "V2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -1.27 -34.29 90)
-					(length 5.08)
-					(name "Y_GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "V3"
+					(number "H3"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -456,12 +463,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -533,7 +545,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -545,7 +557,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -576,12 +588,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -672,7 +689,30 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 90.17 52.07)
+		(end 163.83 119.38)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d7748d25-58c7-4191-941b-f6bcc85f71d7)
+	)
+	(text "Joystick"
+		(exclude_from_sim no)
+		(at 95.504 54.864 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "815bcd3d-ea7a-4679-9ee2-63cef7b104ff")
 	)
 	(junction
 		(at 154.94 88.9)
@@ -949,28 +989,6 @@
 			(type default)
 		)
 		(uuid "fe3bac1c-f22f-4330-8a59-e2968043f962")
-	)
-	(rectangle
-		(start 90.17 52.07)
-		(end 163.83 119.38)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid d7748d25-58c7-4191-941b-f6bcc85f71d7)
-	)
-	(text "Joystick"
-		(exclude_from_sim no)
-		(at 95.504 54.864 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "815bcd3d-ea7a-4679-9ee2-63cef7b104ff")
 	)
 	(hierarchical_label "JOY_Y"
 		(shape input)
